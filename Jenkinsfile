@@ -19,11 +19,31 @@ pipeline {
     }
 */
             stages{
+
+                stage('jdk11') {
+                    agent {
+                        docker {
+                            image 'adoptopenjdk:11-jdk-hotspot'
+                        }
+                     }
+                    steps {
+                        echo "JDK11.."
+                        sh 'java -version'
+                    }
+                }
+
                 stage("Compile"){
                     steps{
                         sh "./gradlew compileJava"
                     }
                 }
+
+                stage("Package"){
+                    steps{
+                        sh "./gradlew build"
+                    }
+                }
+
             }
 
 /*
