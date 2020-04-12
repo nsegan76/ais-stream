@@ -26,7 +26,7 @@ pipeline {
 						sh 'gradle build'
 					}
 				}
-*/
+
 stage('Gradle Build') {
     if (isUnix()) {
         sh './gradlew clean build'
@@ -34,7 +34,7 @@ stage('Gradle Build') {
         bat 'gradlew.bat clean build'
     }
 }
-
+*/
 			}
         }
 
