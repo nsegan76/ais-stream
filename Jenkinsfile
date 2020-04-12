@@ -1,7 +1,7 @@
 pipeline {
     agent any
+/*
     stages {
-
         stage('Build') {
 		 stages {
 			stage('jdk11') {
@@ -15,6 +15,17 @@ pipeline {
 					sh 'java -version'
 				}
 			}
+		}
+    }
+*/
+            stages{
+                stage("Compile"){
+                    steps{
+                        sh "./gradlew compileJava"
+                    }
+                }
+            }
+
 /*
 			stage('gradle') {
 				tools {
@@ -35,8 +46,6 @@ stage('Gradle Build') {
     }
 }
 */
-			}
-        }
 
 
         stage('Test') {
