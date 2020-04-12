@@ -15,7 +15,7 @@ pipeline {
 					sh 'java -version'
 				}
 			}
-
+/*
 			stage('gradle') {
 				tools {
 					 gradle "gradle_5_6_4"
@@ -26,6 +26,15 @@ pipeline {
 						sh 'gradle build'
 					}
 				}
+*/
+stage('Gradle Build') {
+    if (isUnix()) {
+        sh './gradlew clean build'
+    } else {
+        bat 'gradlew.bat clean build'
+    }
+}
+
 			}
         }
 
