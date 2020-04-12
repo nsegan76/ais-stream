@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a6b8aee0-561e-471c-9876-264272a0bde0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1Y5JHRiUXgugjooUczzxg7EACah" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.kafka.stream.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\cbp\IdeaProjects\ais-stream" />
+      <recent name="C:\cbp\IdeaProjects\ais-stream\src\main\java\com\kafka\stream\service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\cbp\IdeaProjects\ais-stream\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$APPLICATION_HOME_DIR$/jbr" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.kafka.stream.starter.App" />
+      <module name="ais-stream.main" />
+      <shortenClasspath name="MANIFEST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kafka.stream.starter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GreeterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ais-stream.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hello.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hello" />
+      <option name="MAIN_CLASS_NAME" value="com.hello.GreeterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="JUnit.GreeterTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.GreeterTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a6b8aee0-561e-471c-9876-264272a0bde0" name="Default Changelist" comment="" />
+      <created>1582226433925</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582226433925</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="455" y="44" key="#&lt;template&gt;_of_Application" timestamp="1583424494457">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="455" y="44" key="#&lt;template&gt;_of_Application/0.0.1536.824@0.0.1536.824" timestamp="1583424494457" />
+    <state x="487" y="83" width="579" height="657" key="#App" timestamp="1583424725388">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="487" y="83" width="579" height="657" key="#App/0.0.1536.824@0.0.1536.824" timestamp="1583424725388" />
+    <state x="225" y="69" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582829043519">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="225" y="69" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582829043519" />
+    <state x="450" y="150" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582749101301">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="450" y="150" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1582749101301" />
+    <state x="473" y="209" key="FileChooserDialogImpl" timestamp="1582828898764">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="473" y="209" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582828898764" />
+    <state width="1493" height="364" key="GridCell.Tab.0.bottom" timestamp="1586442168623">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="364" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586442168623" />
+    <state width="1493" height="364" key="GridCell.Tab.0.center" timestamp="1586442168622">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="364" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586442168622" />
+    <state width="1493" height="364" key="GridCell.Tab.0.left" timestamp="1586442168622">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="364" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586442168622" />
+    <state width="1493" height="364" key="GridCell.Tab.0.right" timestamp="1586442168623">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="364" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586442168623" />
+    <state width="1480" height="259" key="GridCell.Tab.1.bottom" timestamp="1582748723434">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1480" height="259" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582748723434" />
+    <state width="1480" height="259" key="GridCell.Tab.1.center" timestamp="1582748723434">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1480" height="259" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582748723434" />
+    <state width="1480" height="259" key="GridCell.Tab.1.left" timestamp="1582748723434">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1480" height="259" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582748723434" />
+    <state width="1480" height="259" key="GridCell.Tab.1.right" timestamp="1582748723434">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1480" height="259" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582748723434" />
+    <state x="278" y="0" key="SettingsEditor" timestamp="1584449745754">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="278" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584449745754" />
+    <state x="466" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1585837173627">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state x="466" y="225" key="com.intellij.ide.util.TipDialog/0.0.1536.783@0.0.1536.783" timestamp="1585837173627" />
+    <state x="466" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583852630337" />
+    <state x="203" y="34" key="new project wizard" timestamp="1584451961949">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="203" y="34" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1584451961949" />
+    <state x="426" y="177" key="run.anything.popup" timestamp="1586275113767">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state x="426" y="177" key="run.anything.popup/0.0.1536.783@0.0.1536.783" timestamp="1586275113767" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582745911578">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582745911578" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ais_stream$App.ic" NAME="App Coverage Results" MODIFIED="1582746076659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.kafka.stream.starter.*</FILTER>
+    </SUITE>
+  </component>
+</project>
