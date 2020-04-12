@@ -46,8 +46,7 @@ stage('Gradle Build') {
     }
 }
 */
-
-
+/*
         stage('Test') {
             steps {
                 echo "Testing.."
@@ -59,4 +58,5 @@ stage('Gradle Build') {
             }
         }
     }
+    */
  }
