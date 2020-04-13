@@ -1,24 +1,6 @@
 pipeline {
     agent any
-/*
-    stages {
-        stage('Build') {
-		 stages {
-			stage('jdk11') {
-				agent {
-					docker {
-						image 'adoptopenjdk:11-jdk-hotspot'
-					}
-				 }
-				steps {
-					echo "JDK11.."
-					sh 'java -version'
-				}
-			}
-		}
-    }
-*/
-            stages{
+            stages {
 
                 stage('jdk11') {
                     agent {
@@ -44,39 +26,22 @@ pipeline {
                     }
                 }
 
-            }
+                stage("Docker build") {
+                    steps {
+                        sh "docker build -t ais-stream/openjdk:11 ."
+                    }
+                }
 
-/*
-			stage('gradle') {
-				tools {
-					 gradle "gradle_5_6_4"
-				}
-				steps {
-						echo "Gradle.."
-						sh 'gradle --version'
-						sh 'gradle build'
-					}
-				}
+                stage("Deploy to staging") {
+                     steps {
 
-stage('Gradle Build') {
-    if (isUnix()) {
-        sh './gradlew clean build'
-    } else {
-        bat 'gradlew.bat clean build'
-    }
-}
-*/
-/*
-        stage('Test') {
-            steps {
-                echo "Testing.."
+                          sh "docker run --rm --publish=9001:9001 --name ais-stream ais-stream/openjdk:11"
+                     }
+                }
             }
-        }
-        stage('Deploy') {
-            steps {
-                echo "Deploying.."
+            post {
+                 always {
+                      sh "docker stop ais-stream"
+                 }
             }
-        }
-    }
-    */
  }
