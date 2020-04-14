@@ -1,5 +1,9 @@
 pipeline {
     agent any
+      environment {
+      JDK_11 = tool name: 'JDK11', type: 'com.cloudbees.jenkins.plugins.customtools.CustomTool'
+      JAVA_HOME = "${env.JDK_11}"
+      }
             stages {
 
                 stage('jdk11') {
