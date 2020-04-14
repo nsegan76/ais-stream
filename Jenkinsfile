@@ -21,9 +21,9 @@ pipeline {
                 }
 
                 stage("Compile"){
-                tools {
+                /*tools {
                 	gradle "gradle_5_6_4"
-                }
+                }*/
                     steps{
                         sh "./gradlew compileJava"
                     }
