@@ -1,53 +1,13 @@
-pipeline {
-    agent any
+node {
+  jdk = tool name: 'JDK17'
+  env.JAVA_HOME = "${jdk}"
 
-      environment {
-      JDK_11 = tool name: 'JDK11' //, type: 'com.cloudbees.jenkins.plugins.customtools.CustomTool'
-      JAVA_HOME = "${env.JDK_11}"
-      }
+  echo "jdk installation path is: ${jdk}"
 
-            stages {
+  // next 2 are equivalents
+  sh "${jdk}/bin/java -version"
 
-                stage('jdk11') {
-                    agent {
-                        docker {
-                            image 'adoptopenjdk:11-jdk-hotspot'
-                        }
-                     }
-                    steps {
-                        echo "JDK11.."
-                        sh 'java -version'
-                    }
-                }
-
-                stage("Compile"){
-                    steps{
-                        sh "./gradlew compileJava"
-                    }
-                }
-
-                stage("Package"){
-                    steps{
-                        sh "./gradlew build"
-                    }
-                }
-
-                stage("Docker build") {
-                    steps {
-                        sh "docker build -t ais-stream/openjdk:11 ."
-                    }
-                }
-
-                stage("Deploy to staging") {
-                     steps {
-
-                          sh "docker run --rm --publish=9001:9001 --name ais-stream ais-stream/openjdk:11"
-                     }
-                }
-            }
-            post {
-                 always {
-                      sh "docker stop ais-stream"
-                 }
-            }
- }
+  // note that simple quote strings are not evaluated by Groovy
+  // substitution is done by shell script using environment
+  sh '$JAVA_HOME/bin/java -version'
+}
