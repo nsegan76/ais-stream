@@ -19,7 +19,7 @@ pipeline {
                         sh 'java -version'
                     }
                 }
-/*
+
                 stage("Compile"){
                 tools {
                 	gradle "gradle_5_6_4"
@@ -34,7 +34,7 @@ pipeline {
                         sh "./gradlew build"
                     }
                 }
-*/
+
                 stage("Docker build") {
                     steps {
                         sh "docker build -t ais-stream/openjdk:11 ."
