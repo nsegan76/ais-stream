@@ -34,7 +34,7 @@ pipeline {
                         sh "./gradlew build"
                     }
                 }
-*/
+
                 stage("Docker build") {
                     steps {
                         sh "docker build -t ais-stream/openjdk:11 ."
