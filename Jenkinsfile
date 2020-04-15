@@ -15,7 +15,7 @@ stage('Build Project') {
    //git add -f gradle/wrapper/gradle-wrapper.jar
    //sh 'cd ais-stream'
    //sh './gradlew clean build docker'
-   sh "./gradlew build"
+   bat "./gradlew build"
    echo '${env.BUILD_NUMBER}'
 }
 
@@ -29,7 +29,7 @@ stage('Build Project') {
 }*/
 
 stage('Deploy & Start Docker Image') {
-   sh 'docker run -p 9001:9001 -t ais-stream:1.0'
+   bat 'docker run -p 9001:9001 -t ais-stream:1.0'
 }
 
 
