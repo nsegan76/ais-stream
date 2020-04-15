@@ -1,5 +1,5 @@
 def gradle(command) {
-        bat "./gradlew ${command}"
+        sh "./gradlew ${command}"
 }
 
 node {
