@@ -13,7 +13,7 @@ node {
 
 stage('Build Project') {
    //git add -f gradle/wrapper/gradle-wrapper.jar
-   sh 'cd ais-stream'
+   //sh 'cd ais-stream'
    sh 'gradle clean build docker'
    echo '${env.BUILD_NUMBER}'
 }
