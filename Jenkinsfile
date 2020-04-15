@@ -16,7 +16,8 @@ stage('Build Project') {
    //git add -f gradle/wrapper/gradle-wrapper.jar
    //sh 'cd ais-stream'
    //sh './gradlew clean build docker'
-   bat 'gradlew clean build docker'
+   //bat 'gradlew clean build docker'
+   bat "docker build -t ais-stream/openjdk:11 ."
    echo '${env.BUILD_NUMBER}'
 }
 
