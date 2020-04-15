@@ -1,56 +1,35 @@
-pipeline {
-    agent any
-/*
-      environment {
-      JDK_11 = tool name: 'JDK11' //, type: 'com.cloudbees.jenkins.plugins.customtools.CustomTool'
-      JAVA_HOME = "${env.JDK_11}"
-      }
-*/
-            stages {
+def gradle(command) {
+        bat "./gradlew ${command}"
+}
 
-                stage('jdk11') {
-                    agent {
-                        docker {
-                            image 'adoptopenjdk:11-jdk-hotspot'
-                        }
-                     }
-                    steps {
-                        echo "JDK11.."
-                        sh 'java -version'
-                    }
-                }
+node {
 
-                stage("Compile"){
-                /*tools {
-                	gradle "gradle_5_6_4"
-                }*/
-                    steps{
-                        sh "./gradlew compileJava"
-                    }
-                }
+    stage('SCM Checkout') {
+  git changelog: false,
+  poll: false,
+  url: 'https://github.com/nsegan76/ais-stream.git'
 
-                stage("Package"){
-                    steps{
-                        sh "./gradlew build"
-                    }
-                }
+}
 
-                stage("Docker build") {
-                    steps {
-                        sh "docker build -t ais-stream/openjdk:11 ."
-                    }
-                }
+stage('Build Project') {
+   //git add -f gradle/wrapper/gradle-wrapper.jar
+   bat 'cd ais-stream'
+   bat 'gradle clean build docker'
+   echo '${env.BUILD_NUMBER}'
+}
 
-                stage("Deploy to staging") {
-                     steps {
+/*stage('Push image') {
+   docker.withRegistry('https://registry.hub.docker.com',
+                       'centrifuge-docker-hub', 'dockerhub') {
+            app.push('${env.BUILD_NUMBER}')
+            app.push("latest")
+        }
+        echo "Trying to Push Docker Build to DockerHub"
+}*/
 
-                          sh "docker run --rm --publish=9001:9001 --name ais-stream ais-stream/openjdk:11"
-                     }
-                }
-            }
-            post {
-                 always {
-                      sh "docker stop ais-stream"
-                 }
-            }
- }
+stage('Deploy & Start Docker Image') {
+   bat 'docker run -p 9001:9001 -t ais-stream:1.0'
+}
+
+
+}
