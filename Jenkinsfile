@@ -11,6 +11,7 @@ node {
 
 }
 
+/*
 stage('Build Project') {
    //git add -f gradle/wrapper/gradle-wrapper.jar
    //sh 'cd ais-stream'
@@ -18,6 +19,7 @@ stage('Build Project') {
    bat "gradlew build"
    echo '${env.BUILD_NUMBER}'
 }
+*/
 
 /*stage('Push image') {
    docker.withRegistry('https://registry.hub.docker.com',
@@ -29,7 +31,10 @@ stage('Build Project') {
 }*/
 
 stage('Deploy & Start Docker Image') {
-   bat 'docker run -p 9001:9001 -t ais-stream:1.0'
+   bat "docker build -t ais-stream/openjdk:11 ."
+   //bat 'docker run -p 9001:9001 -t ais-stream:1.0'
+   bat "docker run --rm --publish=9001:9001 --name ais-stream ais-stream/openjdk:11"
+
 }
 
 
